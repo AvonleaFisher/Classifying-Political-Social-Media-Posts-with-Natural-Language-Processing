@@ -5,7 +5,7 @@ This project aims to create two classification models for political social media
 
 ## Methods
 Word clouds, word frequency plots, and bigram plots were used to explore the most common words/word pairings in subsets of the data. 
-The social media posts were cleaned and then numerically encoded using Latent Semantic Analysis (LSA). The dependent variables, bias and message, were dummy encoded 
+The social media posts were cleaned and then numerically encoded using TDF-IDF. The dependent variables, bias and message, were dummy encoded 
 and label encoded, respectively. 
 
 Due to extreme class imbalance, models were trained on balanced data that was sampled using the Synthetic Minority Oversampling Technique (SMOTE). A random forest model was created and optimmized for the bias classification task. A K-Nearest Neighbors model was optimized for classifying the posts' message. 
@@ -13,12 +13,9 @@ Due to extreme class imbalance, models were trained on balanced data that was sa
 The models were used to make predictions on a new, small sample of Tweets collected using Tweepy and Twitter's API.
 
 ## Results
-The confusion matrices below provide a visual overview of the performance of the models:
+The confusion matrices below provide a visual overview of the performance of the models on test data:
 
-![RF Test](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/rf_test.png) 
-![RF Training](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/rf_training.png)
-
-![KNN Test](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/KNN_test.png)
+![Test](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/Screen%20Shot%202020-11-06%20at%204.20.05%20PM.png)
 
 The KNN classifier had near-perfect accuracy on the training data, and 45% accuracy on the test data, with 9 total classes.
 
