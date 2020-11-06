@@ -17,14 +17,12 @@ The confusion matrices below provide a visual overview of the performance of the
 
 ![Test](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/Screen%20Shot%202020-11-06%20at%204.20.05%20PM.png)
 
-The KNN classifier had near-perfect accuracy on the training data, and 45% accuracy on the test data, with 9 total classes.
+The Random Forest classifier had 91% accuracy and the KNN classifier had 87% accuracy. 
 
 ## Recommendations 
-The Random Forest model can be used to predict whether a social media post is partisan or neutral with high accuracy. After collecting Tweets or other social media posts for more recent data, partisan posts can be identified and extracted for review by constituents or organizations interested in learning more about a particular politician's views.
+The random forest model can be used to predict whether a social media post is partisan or neutral with high accuracy. After collecting Tweets or other social media posts for more recent data, partisan posts can be identified and extracted for review by constituents or organizations interested in learning more about a particular politician’s views.
 
-The KNN model can classify the message of a post with higher accuracy than random guessing, and performs particularly well on posts that address a politician's constituency. This model can be used to identify such posts for constituents and organizations that engage them.
-
-The exploratory analysis suggested that posts perceived as partisan tend to contain words related to specific policy or legislative issues, like "bill", "law", "health care," and "immigration reform." These terms can be used in queries when attempting to collect partisan posts.
+The KNN model can classify the message of a post with significantly higher accuracy than random guessing, and performs particularly well on the following classes: attack, constituency, media, mobilization, and ‘other’. The exploratory analysis suggested that posts perceived as partisan tend to contain words/word pairings related to specific policy or legislative issues, like ‘law’, ‘health care,’ and ‘immigration reform.’ These terms can be used in queries when attempting to collect partisan posts.
 
 ## Limitations and Next Steps
 Future work should test and optimize different model types, particularly for the message classification task. Given the age of this dataset, it may also be fruitful to collect and label more recent data of a similar type. With such data, future work could assess how the distribution of classes has changed since 2015.
