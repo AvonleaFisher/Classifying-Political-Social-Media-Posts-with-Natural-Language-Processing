@@ -15,7 +15,7 @@ The models were used to make predictions on a new, small sample of Tweets collec
 ## Results
 The confusion matrices below provide a visual overview of the performance of the models on test data:
 
-![Test](https://github.com/AvonleaFisher/dsc-mod-4-project-v2-1-onl01-dtsc-ft-070620/blob/master/Screen%20Shot%202020-11-06%20at%204.20.05%20PM.png)
+![Test](https://github.com/AvonleaFisher/Classifying-Political-Social-Media-Posts-with-Natural-Language-Processing/blob/master/images/Model%20Performance.png)
 
 The Random Forest classifier had 91% accuracy and the KNN classifier had 87% accuracy. 
 
